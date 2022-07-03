@@ -1,11 +1,11 @@
 import {filter} from './filter.js';
 
 describe('Фильтр массива по свойству', () => {
-  let objects = [
-    { login: 'Maks', email: 'maks@maks.com', company: 'METHED' },
-    { login: 'Methed', email: 'info@methed.ru', company: 'METHED' },
-    { login: 'Humidor', email: 'tomato@pomodoro.com', company: 'cucumber' }
-]
+//   let objects = [
+//     { login: 'Maks', email: 'maks@maks.com', company: 'METHED' },
+//     { login: 'Methed', email: 'info@methed.ru', company: 'METHED' },
+//     { login: 'Humidor', email: 'tomato@pomodoro.com', company: 'cucumber' }
+// ]
 
   it('Одно совпадение по email', () => {
     const expected = [objects[1]];

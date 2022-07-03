@@ -1,15 +1,15 @@
-export const filter = (objects) => {
+const filter = (arr, key = '', val= '') => {
 
-  // let resultByCompany = objects.filter(
-  //   (objects) => objects.company === 'METHED'
-  // );
-  // let resultByEmail = objects.filter(
-  //   (objects) => objects.email === 'info@methed.ru'
-  // );
+  for(let i = 0; i < arr.length; i++) {
+    if(arr[i].email === key) {
+      console.log(arr[i])
+    }
 
-  // console.log(resultByCompany);
-  // console.log(resultByEmail);
-};
+    if(arr[i].company === val) {
+      console.log(arr[i])
+    }
+  }
+}
 
 // let objects = [
 //   { login: 'Maks', emali: 'maks@maks.com', company: 'METHED' },
