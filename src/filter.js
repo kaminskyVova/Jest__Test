@@ -17,4 +17,6 @@ const filter = (arr, key = '', val= '') => {
 //   { login: 'Humidor', emali: 'tomato@pomodoro.com', company: 'cucumber' },
 // ];
 
-// filter(objects);
+filter(objects, 'info@methed.ru');
+filter(objects, '', 'METHED');
+
