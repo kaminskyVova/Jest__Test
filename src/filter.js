@@ -1,22 +1,26 @@
-const filter = (arr, key = '', val= '') => {
+export const filter = (arr, key = null, val) => {
+
+  let result = []
 
   for(let i = 0; i < arr.length; i++) {
     if(arr[i].email === key) {
-      console.log(arr[i])
+      result.push(arr[i])
     }
 
     if(arr[i].company === val) {
-      console.log(arr[i])
+      result.push(arr[i])
     }
   }
+  // console.log(result)
+      return result
 }
 
 // let objects = [
-//   { login: 'Maks', emali: 'maks@maks.com', company: 'METHED' },
-//   { login: 'Methed', emali: 'info@methed.ru', company: 'METHED' },
-//   { login: 'Humidor', emali: 'tomato@pomodoro.com', company: 'cucumber' },
+//   { login: 'Maks', email: 'maks@maks.com', company: 'METHED' },
+//   { login: 'Methed', email: 'info@methed.ru', company: 'METHED' },
+//   { login: 'Humidor', email: 'tomato@pomodoro.com', company: 'cucumber' },
 // ];
 
-filter(objects, 'info@methed.ru');
-filter(objects, '', 'METHED');
+// filter(objects, 'info@methed.ru');
+// filter(objects, '', 'METHED');
 
